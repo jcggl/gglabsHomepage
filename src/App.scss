@@ -1,0 +1,36 @@
+.App {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+
+  .body-container {
+    width: 100%;
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+  }
+
+  & * {
+    font-family: 'Poppins';
+  }
+
+  .light {
+    font-weight: 300;
+  }
+
+  .bold {
+    font-weight: bold;
+  }
+
+  .extrabold {
+    font-weight: 800;
+  }
+
+  .italic {
+    font-style: italic;
+  }
+}

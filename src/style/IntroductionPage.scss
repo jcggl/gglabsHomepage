@@ -1,0 +1,28 @@
+.intro-container {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  color: white;
+
+  .intro-desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .intro-title {
+      font-size: 122px;
+      margin-bottom: 28px;
+    }
+
+    .intro-text {
+      color: #a1a1a1;
+      font-size: 24px;
+      word-break: keep-all;
+      text-align: center;
+    }
+  }
+}
