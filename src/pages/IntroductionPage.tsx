@@ -20,7 +20,6 @@ export default function introPage() {
         <ItemCard
           classes={'light italic'}
           styles={{
-            'width': '486px',
             'color': '#ffffff',
             'fontSize': '50px',
             'padding': 0
@@ -33,7 +32,6 @@ export default function introPage() {
         <ItemCard
           classes={'light'}
           styles={{
-            'width': '690px',
             'color': '#ffffff',
             'fontSize': '30px',
             'backgroundColor': '#6038FF'
@@ -55,7 +53,6 @@ export default function introPage() {
         <ItemCard
           classes={'extrabold'}
           styles={{
-            'width': '486px',
             'color': '#000000',
             'fontSize': '34px',
             'backgroundColor': '#84FB72'
@@ -67,7 +64,6 @@ export default function introPage() {
         </ItemCard>
         <ItemCard
           styles={{
-            'width': '690px',
             'backgroundImage': `url(${StrapImg})`,
             'backgroundSize': 'cover'
           }}
