@@ -21,7 +21,7 @@ export default function PartnerPage() {
         }}
       >
         {companies.map((ele: any, idx: number) => 
-          <div className='partner-image-container'>
+          <div className='partner-image-container' key={idx}>
             <img className='partner-image' src={ele} alt={`company-${idx}`} />
           </div>
         )}
