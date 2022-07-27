@@ -1,11 +1,12 @@
 import React from 'react';
-import './App.scss';
 import HeaderPage from 'pages/HeaderPage'
 import IntroductionPage from 'pages/IntroductionPage'
-import useWindowSize from 'hooks/useWindowSize';
-import { WindowSizeContext } from 'contexts/WindowSizeContext';
 import ProjectPage from 'pages/ProjectPage';
 import TeamPage from 'pages/TeamPage';
+import PartnerPage from 'pages/PartnerPage';
+import useWindowSize from 'hooks/useWindowSize';
+import { WindowSizeContext } from 'contexts/WindowSizeContext';
+import './App.scss';
 
 function App() {
   const windowSize = useWindowSize()
@@ -20,6 +21,7 @@ function App() {
           <IntroductionPage />
           <ProjectPage />
           <TeamPage />
+          <PartnerPage />
         </section>
       </div>
     </WindowSizeContext.Provider>

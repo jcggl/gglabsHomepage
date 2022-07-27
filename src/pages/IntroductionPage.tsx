@@ -24,7 +24,9 @@ export default function IntroductionPage() {
   return (
     <article className='intro-container'>
       <div className='intro-desc'>
-        <h2 className={'desc-title extrabold italic'}>GOOD GANG</h2>
+        <h2 className={'desc-title extrabold italic'}>
+          GOOD GANG
+        </h2>
         <p className={'desc-text light'}>
           To change the world, you sometimes have to take the lead with a leap of faith.<br/>
           We hope to make the world a better place in our own experimental and humorous way.<br/>
