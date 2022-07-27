@@ -1,10 +1,10 @@
-.item-box {
+.item-grid-box {
   width: 100%;
   display: grid;
   gap: clamp(20px, 2.6vw, 24px);
   grid-template-rows: auto;
 
-  .box-col {
+  .grid-col {
     display: grid;
     gap: 24px;
   }

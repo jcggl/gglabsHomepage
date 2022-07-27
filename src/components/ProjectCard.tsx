@@ -5,7 +5,7 @@ import 'styles/ProjectCard.scss'
 export default function ProjectCard({cardAttr, buttonAttr}: any) {
   return (
     <div className='project-card' style={cardAttr.styles}>
-      <img className='card-image' src={cardAttr.image} alt={cardAttr.title} />
+      <img className='card-image' src={cardAttr.image} alt={cardAttr.title} draggable={false} />
       <div className='card-header'>
         <h5 className='card-title bold'>
           {cardAttr.title}

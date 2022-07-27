@@ -1,4 +1,4 @@
-.project-container {
+.team-container {
   width: 100%;
   max-width: 1200px;
   margin-top: clamp(120px, 16vw, 250px);
@@ -8,7 +8,7 @@
   align-items: center;
   box-sizing: border-box;
 
-  .project-desc {
+  .team-desc {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -17,16 +17,8 @@
     .desc-title {
       color: #ffffff;
       font-size: clamp(36px, 8vw, 90px);
-      line-height: clamp(44px, 10.4vw, 130px);
       margin-bottom: clamp(24px, 3.5vw, 34px);
-    }
-
-    .desc-sub-title {
-      color: #ffffff;
-      font-size: clamp(24px, 3.5vw, 34px);
-      line-height: clamp(33px, 160%, 50px);
-      word-break: keep-all;
-      margin-bottom: clamp(12px, 1.6vw, 22px);
+      line-height: clamp(44px, 130%, 130px);
     }
 
     .desc-text {

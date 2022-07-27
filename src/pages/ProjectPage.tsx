@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import ItemBox from 'components/ItemBox'
+import ItemGridBox from 'components/ItemGridBox'
 import ProjectCard from 'components/ProjectCard'
 import BeerGang from 'assets/BeerGang.png'
 import GangHouse from 'assets/GangHouse.png'
@@ -32,7 +32,9 @@ export default function ProjectPage() {
   return (
     <article className='project-container'>
       <div className='project-desc'>
-        <h3 className={'desc-title extrabold italic'}>Project</h3>
+        <h3 className={'desc-title extrabold italic'}>
+          Project
+        </h3>
         <h5 className={'desc-sub-title bold'}>
           We want to help you transverse between virtual space and the real world.
         </h5>
@@ -47,7 +49,7 @@ export default function ProjectPage() {
           with the world.
         </p>
       </div>
-      <ItemBox
+      <ItemGridBox
         styles={{
           'marginTop': 'clamp(36px, 9vw, 81px)',
           'gridTemplateColumns': getGridTemplateColumns()
@@ -80,7 +82,7 @@ export default function ProjectPage() {
           }}
           buttonAttr={disableButtonAttrs}
         />
-      </ItemBox>
+      </ItemGridBox>
     </article>
   )
 }

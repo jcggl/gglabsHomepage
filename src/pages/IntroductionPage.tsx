@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import ItemBox from 'components/ItemBox'
+import ItemGridBox from 'components/ItemGridBox'
 import ItemCard from 'components/ItemCard'
 import GlobalBtn from 'components/GlobalBtn';
 import StrapImg from 'assets/strap-img.png'
@@ -24,14 +24,14 @@ export default function IntroductionPage() {
   return (
     <article className='intro-container'>
       <div className='intro-desc'>
-        <h2 className={'intro-title extrabold italic'}>GOOD GANG</h2>
-        <p className={'intro-text light'}>
+        <h2 className={'desc-title extrabold italic'}>GOOD GANG</h2>
+        <p className={'desc-text light'}>
           To change the world, you sometimes have to take the lead with a leap of faith.<br/>
           We hope to make the world a better place in our own experimental and humorous way.<br/>
           In our own GoodGang manner!
         </p>
       </div>
-      <ItemBox
+      <ItemGridBox
         styles={{
           'marginTop': 'clamp(76px, 11vw, 145px)',
           'gridTemplateColumns': getGridTemplateColumns()
@@ -103,7 +103,7 @@ export default function IntroductionPage() {
             'backgroundSize': 'cover'
           }}
         />
-      </ItemBox>
+      </ItemGridBox>
     </article>
   )
 }
