@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react';
 
 function getWindowSize() {
-  if (window.innerWidth > 768) {
+  if (window.innerWidth > 1023) {
     return 'l'
   }
-  else if (window.innerWidth > 501 && window.innerWidth <= 768) {
+  else if (window.innerWidth > 768 && window.innerWidth <= 1023) {
     return 'm'
   }
   else {

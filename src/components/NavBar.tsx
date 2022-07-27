@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Logo from 'assets/logo.png'
-import 'style/NavBar.scss'
+import 'styles/NavBar.scss'
 
 export default function NavBar() {
   const [language, setLanguage] = useState('en')

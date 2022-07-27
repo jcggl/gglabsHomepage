@@ -4,6 +4,7 @@ import HeaderPage from 'pages/HeaderPage'
 import IntroductionPage from 'pages/IntroductionPage'
 import useWindowSize from 'hooks/useWindowSize';
 import { WindowSizeContext } from 'contexts/WindowSizeContext';
+import ProjectPage from 'pages/ProjectPage';
 
 function App() {
   const windowSize = useWindowSize()
@@ -16,6 +17,7 @@ function App() {
         <HeaderPage />
         <section className='body-container'>
           <IntroductionPage />
+          <ProjectPage />
         </section>
       </div>
     </WindowSizeContext.Provider>

@@ -1,0 +1,13 @@
+.button {
+  color: #ffffff;
+  background-color: transparent;
+  border: 1px #ffffff solid;
+  border-radius: 53px;
+  padding: 9px 35px;
+  cursor: pointer;
+
+  &:disabled {
+    color: #a1a1a1;
+    border-color: #a1a1a1;
+  }
+}

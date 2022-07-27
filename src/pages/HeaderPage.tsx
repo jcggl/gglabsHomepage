@@ -2,7 +2,7 @@ import React from 'react'
 import NavBar from 'components/NavBar'
 import Symbol from 'assets/symbol.png'
 import HeaderImg from 'assets/header-img.png'
-import 'style/HeaderPage.scss'
+import 'styles/HeaderPage.scss'
 
 export default function HeaderPage() {
   return (

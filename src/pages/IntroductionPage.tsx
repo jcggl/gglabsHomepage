@@ -1,11 +1,26 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import ItemBox from 'components/ItemBox'
 import ItemCard from 'components/ItemCard'
 import GlobalBtn from 'components/GlobalBtn';
 import StrapImg from 'assets/strap-img.png'
-import 'style/IntroductionPage.scss'
+import 'styles/IntroductionPage.scss'
+import { WindowSizeContext } from 'contexts/WindowSizeContext';
 
-export default function introPage() {
+export default function IntroductionPage() {
+  const windowSize = useContext(WindowSizeContext)
+
+  const getGridTemplateColumns = () => {
+    if (windowSize === 's') {
+      return '100%'
+    }
+    else if (windowSize === 'm') {
+      return '1fr 1fr'
+    }
+    else {
+      return '40% 60%'
+    }
+  }
+
   return (
     <article className='intro-container'>
       <div className='intro-desc'>
@@ -19,7 +34,7 @@ export default function introPage() {
       <ItemBox
         styles={{
           'marginTop': 'clamp(76px, 11vw, 145px)',
-          'gridTemplateColumns': '40% 60%'
+          'gridTemplateColumns': getGridTemplateColumns()
         }}
       >
         <ItemCard
@@ -48,8 +63,6 @@ export default function introPage() {
             text={'Mission'}
             classes={'extrabold'}
             styles={{
-              'color': '#ffffff',
-              'borderColor': '#ffffff',
               'fontSize': 'clamp(14px, 2.86vw, 24px)',
               'marginBottom': 'clamp(16px, 3vw, 24px)'
             }}
@@ -85,6 +98,7 @@ export default function introPage() {
         </ItemCard>
         <ItemCard
           styles={{
+            'height': 'clamp(155px, 20vw,334px)',
             'backgroundImage': `url(${StrapImg})`,
             'backgroundSize': 'cover'
           }}

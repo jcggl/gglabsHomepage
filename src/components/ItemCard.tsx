@@ -1,9 +1,9 @@
 import React from 'react'
-import 'style/ItemCard.scss'
+import 'styles/ItemCard.scss'
 
 export default function ItemCard({children, classes, styles}: any) {
   return (
-    <div className={'card ' + classes} style={styles}>
+    <div className={'item-card ' + classes} style={styles}>
       {children}
     </div>
   )

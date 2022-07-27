@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import 'style/ItemBox.scss'
+import 'styles/ItemBox.scss'
 import { WindowSizeContext } from 'contexts/WindowSizeContext';
 
 export default function ItemBox({ children, styles }: any) {

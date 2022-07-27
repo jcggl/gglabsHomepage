@@ -2,13 +2,18 @@
   width: 100%;
   display: grid;
   gap: clamp(20px, 2.6vw, 24px);
+  grid-template-rows: auto;
 
   .box-col {
     display: grid;
     gap: 24px;
   }
+
+  .left {
+    margin-bottom: auto;
+  }
   
   .right {
-    margin-top: 133px;
+    margin-top: clamp(0px, calc(100% - 500px), 177px);
   }
 }

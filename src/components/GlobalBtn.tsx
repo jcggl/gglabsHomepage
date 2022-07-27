@@ -1,9 +1,9 @@
 import React from 'react'
-import globalStyles from 'style/GlobalStyles.module.scss'
+import globalStyles from 'styles/GlobalStyles.module.scss'
 
-export default function GlobalBtn({text, classes, styles}: any) {
+export default function GlobalBtn({text, classes, styles, disabled}: any) {
   return (
-    <button className={globalStyles.button + ' ' + classes} style={styles}>
+    <button className={globalStyles.button + ' ' + classes} style={styles} disabled={disabled}>
       { text }
     </button>
   )
