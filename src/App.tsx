@@ -7,6 +7,7 @@ import PartnerPage from 'pages/PartnerPage';
 import useWindowSize from 'hooks/useWindowSize';
 import { WindowSizeContext } from 'contexts/WindowSizeContext';
 import './App.scss';
+import FooterPage from 'pages/FooterPage';
 
 function App() {
   const windowSize = useWindowSize()
@@ -22,6 +23,7 @@ function App() {
           <ProjectPage />
           <TeamPage />
           <PartnerPage />
+          <FooterPage />
         </section>
       </div>
     </WindowSizeContext.Provider>
