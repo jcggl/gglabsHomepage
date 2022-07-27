@@ -4,8 +4,7 @@
   justify-content: center;
   align-items: flex-start;
   border-radius: 8px;
-  padding: 40px;
-  margin: 12px 0;
+  padding: clamp(16px, 2.34vw, 40px);
   position: relative;
   word-break: keep-all;
   box-sizing: border-box;

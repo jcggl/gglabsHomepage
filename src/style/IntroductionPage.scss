@@ -6,6 +6,9 @@
   justify-content: center;
   align-items: center;
   color: white;
+  margin-top: clamp(64px, 15vw, 194px);
+  padding: 0 2rem;
+  box-sizing: border-box;
 
   .intro-desc {
     display: flex;
@@ -13,13 +16,15 @@
     align-items: center;
 
     .intro-title {
-      font-size: 122px;
-      margin-bottom: 28px;
+      font-size: clamp(48px, 10vw,122px);
+      margin-bottom: clamp(20px, 5vw, 32px);
     }
 
     .intro-text {
+      width: 100%;
       color: #a1a1a1;
-      font-size: 24px;
+      font-size: clamp(14px, 2vw, 24px);
+      line-height: 185%;
       word-break: keep-all;
       text-align: center;
     }

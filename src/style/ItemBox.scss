@@ -1,11 +1,11 @@
 .item-box {
   width: 100%;
   display: grid;
-  gap: 12px;
+  gap: clamp(20px, 2.6vw, 24px);
 
   .box-col {
     display: grid;
-    gap: 12px;
+    gap: 24px;
   }
   
   .right {

@@ -38,7 +38,7 @@
     $text-font-size: clamp(16px, 3.4vw, 34px);
     
     .header-title { 
-      margin-bottom: 34px;
+      margin-bottom: clamp(16px, 4.5vw, 34px);
       font-size: $title-font-size;
       width: 80%;
       letter-spacing: calc(154px * -0.05);
@@ -50,7 +50,7 @@
       color: #1f1f1f;
       font-size: $text-font-size;
       width: 70%;
-      line-height: calc($text-font-size + 4px);
+      line-height: clamp(27px, 160%, 50px);
     }
     
   }

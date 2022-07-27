@@ -1,15 +1,16 @@
-import React from 'react'
-import useWindowSize from 'hooks/useWindowSize';
+import React, { useContext } from 'react'
 import 'style/ItemBox.scss'
+import { WindowSizeContext } from 'contexts/WindowSizeContext';
 
-export default function ItemBox({ children }: any) {
-  const size = useWindowSize()
-  console.log(size)
+export default function ItemBox({ children, styles }: any) {
+  const windowSize = useContext(WindowSizeContext)
 
   function boxLayout() {
-    if (size === 's') {
+    if (windowSize === 's') {
       return (
-        <div className='item-box'>
+        <div className='item-box'
+          style={styles}
+        >
           {children}
         </div>
       )
@@ -20,7 +21,7 @@ export default function ItemBox({ children }: any) {
 
       return (
         <div className='item-box'
-          style={{'gridTemplateColumns': '1fr 1fr'}}
+          style={styles}
         >
           <div className='box-col left'>
             {leftItems}

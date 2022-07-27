@@ -9,19 +9,25 @@ export default function introPage() {
   return (
     <article className='intro-container'>
       <div className='intro-desc'>
-        <h2 className={'intro-title extrabold italic'}>GOODGANG</h2>
+        <h2 className={'intro-title extrabold italic'}>GOOD GANG</h2>
         <p className={'intro-text light'}>
           To change the world, you sometimes have to take the lead with a leap of faith.<br/>
           We hope to make the world a better place in our own experimental and humorous way.<br/>
           In our own GoodGang manner!
         </p>
       </div>
-      <ItemBox>
+      <ItemBox
+        styles={{
+          'marginTop': 'clamp(76px, 11vw, 145px)',
+          'gridTemplateColumns': '40% 60%'
+        }}
+      >
         <ItemCard
           classes={'light italic'}
           styles={{
             'color': '#ffffff',
-            'fontSize': '50px',
+            'fontSize': 'clamp(24px, 3.65vw, 50px)',
+            'lineHeight': '150%',
             'padding': 0
           }}
         >
@@ -33,8 +39,9 @@ export default function introPage() {
           classes={'light'}
           styles={{
             'color': '#ffffff',
-            'fontSize': '30px',
-            'backgroundColor': '#6038FF'
+            'backgroundColor': '#6038FF',
+            'fontSize': 'clamp(18px, 2.86vw, 30px)',
+            'lineHeight': 'clamp(26px, 155%, 51px)'
           }}
         >
           <GlobalBtn
@@ -43,7 +50,8 @@ export default function introPage() {
             styles={{
               'color': '#ffffff',
               'borderColor': '#ffffff',
-              'fontSize': '24px'
+              'fontSize': 'clamp(14px, 2.86vw, 24px)',
+              'marginBottom': 'clamp(16px, 3vw, 24px)'
             }}
           />
           <p>
@@ -54,10 +62,23 @@ export default function introPage() {
           classes={'extrabold'}
           styles={{
             'color': '#000000',
-            'fontSize': '34px',
-            'backgroundColor': '#84FB72'
+            'backgroundColor': '#84FB72',
+            'fontSize': 'clamp(22px, 3vw, 34px)',
+            'lineHeight': 'clamp(33px, 165%, 50px)',
+            'paddingTop': 'clamp(63px, 10vw, 130px)',
+            'marginTop': 'calc(clamp(60px, 9vw, 100px) / 2)'
           }}
         >
+          <p className='fire-imogy'
+            style={{
+              'position': 'absolute',
+              'top': '-10%',
+              'left': '5%',
+              'fontSize': 'clamp(60px, 9vw, 100px)'
+            }}
+          >
+            🔥
+          </p>
           <p>
             Build a metaverse avatar communication platform
           </p>
