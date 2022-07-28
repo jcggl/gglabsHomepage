@@ -13,10 +13,14 @@ export default function FooterPage() {
         <h5 className='desc-option bold'>
           Contact Us
         </h5>
-        <p className='desc-text light'>
-          Want to join our Eternal Beership?<br/>
-          Shoot us an <strong>hello@goodganglabs.com</strong>
-        </p>
+        <span className='desc-text light'>
+          {'Want to join our Eternal Beership?'}
+          <br/>
+          {'Shoot us an '}
+          <a className='desc-anchor bold' href='mailto:hello@goodganglabs.com'>
+            hello@goodganglabs.com
+          </a>
+        </span>
       </div>
       <div className='footer-info'>
         <img className='footer-logo' src={secondLogo} alt="logo" />

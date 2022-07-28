@@ -34,6 +34,11 @@
       font-size: clamp(14px, 2vw, 24px);
       line-height: 185%;
       word-break: keep-all;
+
+      .desc-anchor {
+        color: #a1a1a1;
+        text-decoration: none;
+      }
     }
   }
 
