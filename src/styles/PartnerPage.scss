@@ -30,7 +30,7 @@
   }
 
   .partner-image-container {
-    $image-container-height: min(14.8vw, 226px);
+    $image-container-height: clamp(90px, 14.8vw, 226px);
 
     width: min(30%, 378px);
     height: $image-container-height;
