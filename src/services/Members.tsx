@@ -24,7 +24,7 @@ const Members: object[] = [
     'image': SY,
     'name': 'Seoyoung Kim',
     'role': 'CCO / Co-Founder',
-    'comment': 'Desire to make the hottest burger in the galaxy',
+    'comment': 'trust my gut',
     'contect': 'https://www.linkedin.com/in/seo-young-kim-42859ab5/'
   },
   {
