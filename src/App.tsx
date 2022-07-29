@@ -5,12 +5,15 @@ import ProjectPage from 'pages/ProjectPage';
 import TeamPage from 'pages/TeamPage';
 import PartnerPage from 'pages/PartnerPage';
 import useWindowSize from 'hooks/useWindowSize';
+import FooterPage from 'pages/FooterPage';
+import ReactGA from 'react-ga'
 import { WindowSizeContext } from 'contexts/WindowSizeContext';
 import './App.scss';
-import FooterPage from 'pages/FooterPage';
 
 function App() {
   const windowSize = useWindowSize()
+  const trackingID:string = process.env.REACT_APP_GOOGLE_ANALYTICS_TRACKING_ID!
+  ReactGA.initialize(trackingID)
 
   return (
     <WindowSizeContext.Provider
