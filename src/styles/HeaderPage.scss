@@ -15,12 +15,12 @@
     height: 100%;
     position: absolute;
     top: 0;
-    right: -10%;
+    right: -12.5%;
     background-position: left;
     background-size: cover;
 
     .symbol-img {
-      width: clamp(120px, 35%, 230px);
+      width: min(20vw, 230px);
       position: absolute;
       top: 25%;
       left: 40%;
@@ -31,16 +31,16 @@
 
   .header-desc {
     z-index: 2;
-    margin-bottom: clamp(40px, 10vw, 120px);
+    margin-bottom: clamp(40px, 8vw, 80px);
     padding-left: 1rem;
     /// variable ///
-    $title-font-size: clamp(70px, 12.5vw, 150px);
-    $text-font-size: clamp(16px, 3.4vw, 34px);
+    $title-font-size: clamp(70px, 11vw, 140px);
+    $text-font-size: clamp(14px, 3vw, 30px);
     
     .header-title { 
       margin-bottom: clamp(16px, 4.5vw, 34px);
       font-size: $title-font-size;
-      width: 75%;
+      width: 72%;
       letter-spacing: calc($title-font-size * -0.05);
       word-break: break-all;
       line-height: calc($title-font-size + 4px);
@@ -49,7 +49,7 @@
     .header-text {
       color: #1f1f1f;
       font-size: $text-font-size;
-      width: 70%;
+      width: 65%;
       line-height: clamp(27px, 160%, 50px);
     }
     
@@ -57,7 +57,7 @@
   /// tablet size /// 
   // @media screen and (max-width: 1023px) {
   //   .header-deco {
-  //     width: 75%;
+  //     right: -10%;
   //   }
   // }
   
@@ -65,6 +65,13 @@
   @media screen and (max-width: 767px) {
     .header-deco {
       width: 90%;
+      right: -10%;
+
+      .symbol-img {
+        width: max(120px, 25vw);
+        top: 30%;
+        left: 45%;
+      }
     }   
 
     .header-desc > .header-title {
