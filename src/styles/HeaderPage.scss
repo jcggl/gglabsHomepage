@@ -20,7 +20,7 @@
     background-size: cover;
 
     .symbol-img {
-      width: clamp(120px, 26vw, 230px);
+      width: clamp(120px, 35%, 230px);
       position: absolute;
       top: 25%;
       left: 40%;
@@ -31,17 +31,17 @@
 
   .header-desc {
     z-index: 2;
-    margin-bottom: clamp(43px, 11vw,126px);
-    padding-left: 2rem;
+    margin-bottom: clamp(40px, 10vw, 120px);
+    padding-left: 1rem;
     /// variable ///
-    $title-font-size: clamp(70px, 13vw, 154px);
+    $title-font-size: clamp(70px, 12.5vw, 150px);
     $text-font-size: clamp(16px, 3.4vw, 34px);
     
     .header-title { 
       margin-bottom: clamp(16px, 4.5vw, 34px);
       font-size: $title-font-size;
-      width: 80%;
-      letter-spacing: calc(154px * -0.05);
+      width: 75%;
+      letter-spacing: calc($title-font-size * -0.05);
       word-break: break-all;
       line-height: calc($title-font-size + 4px);
     }
@@ -55,11 +55,11 @@
     
   }
   /// tablet size /// 
-  @media screen and (max-width: 1023px) {
-    .header-deco {
-      width: 75%;
-    }
-  }
+  // @media screen and (max-width: 1023px) {
+  //   .header-deco {
+  //     width: 75%;
+  //   }
+  // }
   
   /// mobile size ///
   @media screen and (max-width: 767px) {
