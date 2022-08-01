@@ -25,6 +25,8 @@
     border: none;
     font-weight: 300;
     cursor: pointer;
+    /// 요소 숨김처리 ///
+    visibility: hidden;
 
     option {
       color: #000000;
