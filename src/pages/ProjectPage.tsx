@@ -1,9 +1,9 @@
 import React, { useContext } from 'react'
 import ItemGridBox from 'components/ItemGridBox'
 import ProjectCard from 'components/ProjectCard'
-import BeerGang from 'assets/BeerGang.png'
-import GangHouse from 'assets/GangHouse.png'
-import ARGang from 'assets/ARGang.png'
+import Avatar from 'assets/Avatar.png'
+import Communication from 'assets/Communication.png'
+import Camera from 'assets/Camera.png'
 import 'styles/ProjectPage.scss'
 import { WindowSizeContext } from 'contexts/WindowSizeContext'
 
@@ -57,17 +57,17 @@ export default function ProjectPage() {
       >
         <ProjectCard
           cardAttr={{
-            'image': BeerGang,
-            'title': 'BeerGang',
-            'text': 'The world’s first emotionally interactive full-body 3D avatar.'
+            'image': Avatar,
+            'title': 'Avatar',
+            'text': 'Emotionally interactive full-body 3D avatars.'
           }}
           buttonAttr={disableButtonAttrs}
         />
         <ProjectCard
           cardAttr={{
-            'image': GangHouse,
-            'title': 'GangHouse',
-            'text': 'A 3D metaverse space (equivalent to the metaverse version of Zoom).',
+            'image': Communication,
+            'title': 'Communication',
+            'text': 'An avatar based communication platform on Metaverse (equivalent to the metaverse version of Zoom).',
             'styles': {
               'margin': 'auto 0'
             }
@@ -76,8 +76,8 @@ export default function ProjectPage() {
         />
         <ProjectCard
           cardAttr={{
-            'image': ARGang,
-            'title': 'ARGang',
+            'image': Camera,
+            'title': 'Camera',
             'text': 'An Augmented Reality camera to help people express their true identities with Beergang avatars and share special moments with the world.'
           }}
           buttonAttr={disableButtonAttrs}
