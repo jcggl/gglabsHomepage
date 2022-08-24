@@ -67,7 +67,7 @@ export default function ProjectPage() {
           cardAttr={{
             'image': Communication,
             'title': 'Communication',
-            'text': 'An avatar based communication platform on Metaverse (equivalent to the metaverse version of Zoom).',
+            'text': 'An avatar based communication platform on metaverse for all games and services.',
             'styles': {
               'margin': 'auto 0'
             }

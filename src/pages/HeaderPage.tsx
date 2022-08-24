@@ -14,7 +14,7 @@ export default function HeaderPage() {
       <div className='header-desc'>
         <h1 className={'header-title extrabold italic'}>GOODGANGLABS</h1>
         <p className={'header-text light'}>
-          Build a metaverse avatar communication platform.
+          Bringing people together through avatars
         </p>
       </div>
     </header>
