@@ -14,11 +14,11 @@ export default function TeamPage() {
         <p className='desc-text light'>
           GoodGang Labs is made up of professionals with more than 10 years
           of experience in Metaverse, Community, Avatar, and AR/VR related
-          projects in global top tier tech companies (Facebook, Google, Naver,
-          Line, Snow, and more). Currently, members live and work remotely in
-          major global cities (San Francisco, Seoul, Hawaii, and Vancouver).
-          Our products have a unique charm that blends with the various experiences
-          of the members.
+          projects in global top tier tech companies (Facebook, Naver, Line,
+          Snow, and more). Currently, members live and work remotely in major
+          global cities (San Francisco, Seoul, Hawaii, and Vancouver).
+          Our products have a unique charm that blends with the various
+          experiences of the members.
         </p>
       </div>
       <ItemFlexBox

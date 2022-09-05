@@ -27,6 +27,7 @@
   }
 
   .card-text {
+    width: 80%;
     color: #a1a1a1;
     font-size: clamp(14px, 1.8vw, 18px);
     line-height: clamp(20px, 2.9vw, 24px);
@@ -36,6 +37,10 @@
     .card-header {
       flex-direction: column-reverse;
       align-items: flex-end;
+    }
+
+    .card-text {
+      width: 100%;
     }
   }
 }
