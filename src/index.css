@@ -3,7 +3,19 @@
 
 @layer components {
   .item-grid-box {
-    @apply w-full grid grid-cols-1 gap-[clamp(20px,2.6vw,24px)] items-start tablet:grid-cols-2 desktop:grid-cols-[45fr,55fr];
+    @apply w-full grid grid-cols-1 gap-[clamp(20px,2.6vw,24px)] items-start tablet:grid-cols-2;
+  }
+
+  .title {
+    @apply text-white text-[clamp(36px,8vw,90px)] leading-[clamp(44px,10.4vw,130px)] font-extrabold italic mb-[clamp(24px,3.5vw,34px)];
+  }
+
+  .sub-title {
+    @apply text-white text-[clamp(24px,2.5vw,34px)] leading-[clamp(33px,160%,50px)] font-bold break-words mb-[clamp(12px,1.6vw,22px)]
+  }
+
+  .desc {
+    @apply text-[#a1a1a1] text-[clamp(14px,2vw,24px)] leading-[185%] break-words
   }
 }
 

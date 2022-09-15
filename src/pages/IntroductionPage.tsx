@@ -27,13 +27,13 @@ export default function IntroductionPage() {
         <h2 className={String.raw`text-[clamp(48px,10vw,122px)] font-extrabold italic leading-[clamp(54px,110%,132px)] mb-[clamp(20px,5vw,32px)] text-center`}>
           GOOD GANG
         </h2>
-        <p className={String.raw`w-full text-[#a1a1a1] text-[clamp(14px,2vw,24px)] leading-[185%] break-words text-center`}>
+        <p className={'desc text-center'}>
           To change the world, you sometimes have to take the lead with a leap of faith.<br/>
           We hope to make the world a better place in our own experimental and humorous way.<br/>
           In our own GoodGang manner!
         </p>
       </div>
-      <ItemGridBox classes={'mt-[clamp(76px,11vw,145px)]'}>
+      <ItemGridBox classes={'mt-[clamp(76px,11vw,145px)] desktop:grid-cols-[40fr,60fr]'}>
         <ItemCard
           classes={'text-white text-[clamp(24px,3.65vw,50px)] leading-[150%] font-light italic p-0'}
         >
@@ -46,11 +46,7 @@ export default function IntroductionPage() {
         >
           <GlobalBtn
             text={'Mission'}
-            classes={'extrabold'}
-            styles={{
-              'fontSize': 'clamp(14px, 2.86vw, 24px)',
-              'marginBottom': 'clamp(16px, 3vw, 24px)'
-            }}
+            classes={'text-[clamp(14px,2.86vw,24px)] font-extrabold mb-[clamp(16px,3vw,24px)]'}
           />
           <p>
             Make the world a better place by helping people express their true identities and use their passion and talents to generate legitimate revenue in a fun way..
@@ -64,7 +60,7 @@ export default function IntroductionPage() {
             🔥
           </p>
           <p>
-            Build a metaverse avatar communication platform
+            Build a metaverse with avatar based communicational platform.
           </p>
         </ItemCard>
         <ItemCard
