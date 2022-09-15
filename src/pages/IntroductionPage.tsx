@@ -22,23 +22,18 @@ export default function IntroductionPage() {
   }
 
   return (
-    <article className='intro-container'>
-      <div className='intro-desc'>
-        <h2 className={'desc-title extrabold italic'}>
+    <article className={String.raw`w-full max-w-[1200px] flex flex-col justify-center items-center text-white mt-[clamp(64px,15vw,194px)] px-4 box-border`}>
+      <div className={String.raw`flex flex-col items-center`}>
+        <h2 className={String.raw`text-[clamp(48px,10vw,122px)] font-extrabold italic leading-[clamp(54px,110%,132px)] mb-[clamp(20px,5vw,32px)] text-center`}>
           GOOD GANG
         </h2>
-        <p className={'desc-text light'}>
+        <p className={String.raw`w-full text-[#a1a1a1] text-[clamp(14px,2vw,24px)] leading-[185%] break-words text-center`}>
           To change the world, you sometimes have to take the lead with a leap of faith.<br/>
           We hope to make the world a better place in our own experimental and humorous way.<br/>
           In our own GoodGang manner!
         </p>
       </div>
-      <ItemGridBox
-        styles={{
-          'marginTop': 'clamp(76px, 11vw, 145px)',
-          'gridTemplateColumns': getGridTemplateColumns()
-        }}
-      >
+      <ItemGridBox>
         <ItemCard
           classes={'light italic'}
           styles={{
