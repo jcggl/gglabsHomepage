@@ -1,6 +1,6 @@
 import React, { ChangeEvent, useContext, useEffect, useState } from 'react'
 import Logo from 'assets/logo.png'
-import 'styles/NavBar.scss'
+// import 'styles/NavBar.scss'
 import { WindowSizeContext } from 'contexts/WindowSizeContext'
 
 export default function NavBar() {
@@ -26,9 +26,11 @@ export default function NavBar() {
   }
   
   return (
-    <nav className='nav-container'>
-      <img className='goodgang-logo' src={Logo} alt="logo" />
-      <select className='language-select' defaultValue={'en'}
+    <nav className={String.raw`w-full h-[10%] flex justify-between items-center bg-transparent px-4 box-border absolute top-0 z-[2]`}>
+      <img className={String.raw`h-[50%] cursor-pointer`}
+        src={Logo} alt="logo" />
+      <select className={String.raw`text-base p-2 rounded-[5px] bg-white/75 backdrop-blur-[2px] border-none font-light cursor-pointer hidden`}
+        defaultValue={'en'}
         onChange={(e: React.ChangeEvent<HTMLSelectElement>) => {setLanguage(e.target.value)}}
       >
         {Object.keys(languages).map((key: string) => (
