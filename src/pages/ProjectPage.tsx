@@ -1,15 +1,11 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import ItemGridBox from 'components/ItemGridBox'
 import ProjectCard from 'components/ProjectCard'
 import Avatar from 'assets/Avatar.png'
 import Communication from 'assets/Communication.png'
 import Camera from 'assets/Camera.png'
-import 'styles/ProjectPage.scss'
-import { WindowSizeContext } from 'contexts/WindowSizeContext'
 
 export default function ProjectPage() {
-  const windowSize = useContext(WindowSizeContext)
-
   const disableButtonAttrs = {
     'text': 'Coming soon',
     'classes': 'text-[clamp(14px,1.8vw,16px)] py-[6px] px-[18px] font-light',

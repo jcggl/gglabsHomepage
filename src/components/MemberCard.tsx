@@ -1,6 +1,5 @@
 import React from 'react'
 import LinkedIn from 'assets/LinkedIn.png'
-import 'styles/MemberCard.scss'
 
 export default function MemberCard({image, name, role, comment, contect}: any) {
   return (

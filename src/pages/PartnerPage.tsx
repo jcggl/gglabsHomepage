@@ -1,8 +1,7 @@
+import React from 'react'
 import Bedge from 'components/Bedge'
 import ItemFlexBox from 'components/ItemFlexBox'
-import React from 'react'
 import {companies, people} from 'services/Partners'
-import 'styles/PartnerPage.scss'
 
 export default function PartnerPage() {
   return (

@@ -1,6 +1,5 @@
-import React, { ChangeEvent, useContext, useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import Logo from 'assets/logo.png'
-// import 'styles/NavBar.scss'
 import { WindowSizeContext } from 'contexts/WindowSizeContext'
 
 export default function NavBar() {

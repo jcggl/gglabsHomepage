@@ -2,11 +2,9 @@ import React from 'react'
 import NavBar from 'components/NavBar'
 import Symbol from 'assets/symbol.png'
 import HeaderImg from 'assets/header-img.png'
-// import 'styles/HeaderPage.scss'
 
 export default function HeaderPage() {
   return (
-    // <header className='header-container'>
     <header className={String.raw`w-full max-w-[1200px] h-screen bg-white flex flex-col justify-end items-start relative overflow-hidden px-4`}>
       <NavBar />
       <div className={String.raw`

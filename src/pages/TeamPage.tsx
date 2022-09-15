@@ -2,7 +2,6 @@ import React from 'react'
 import ItemFlexBox from 'components/ItemFlexBox'
 import MemberCard from 'components/MemberCard'
 import Members from 'services/Members'
-import 'styles/TeamPage.scss'
 
 export default function TeamPage() {
   return (

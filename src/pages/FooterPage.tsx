@@ -1,10 +1,9 @@
 import React from 'react'
 import secondLogo from 'assets/logo2.png'
-import 'styles/FooterPage.scss'
 
 export default function FooterPage() {
   return (
-    <footer className={String.raw`w-full max-w-[1200px] flex flex-col items-center mt-[clmap(120px,16vw,250px)] px-4 box-border`}>
+    <footer className={String.raw`w-full max-w-[1200px] flex flex-col items-center mt-[clamp(120px,16vw,250px)] px-4 box-border`}>
       <div className={String.raw`w-full flex flex-col items-start mb-[clamp(120px,15.6vw,316px)]`}>
         <h3 className={String.raw`title`}>
           We are<br/>

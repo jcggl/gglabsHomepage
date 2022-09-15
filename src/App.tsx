@@ -8,7 +8,6 @@ import useWindowSize from 'hooks/useWindowSize';
 import FooterPage from 'pages/FooterPage';
 import ReactGA from 'react-ga'
 import { WindowSizeContext } from 'contexts/WindowSizeContext';
-// import './App.scss'
 
 function App() {
   const windowSize = useWindowSize()

@@ -1,6 +1,5 @@
 import React from 'react'
 import GlobalBtn from './GlobalBtn'
-import 'styles/ProjectCard.scss'
 
 export default function ProjectCard({cardAttr, buttonAttr}: any) {
   return (
@@ -10,7 +9,7 @@ export default function ProjectCard({cardAttr, buttonAttr}: any) {
       <div className={String.raw`flex flex-col-reverse flex-wrap justify-between items-end mb-[clamp(2px,0.8vw,12px)]
         desktop:flex-row desktop:items-center`}
       >
-        <h5 className={String.raw`text-white text-[clamp(24px,3.6vw,38px)] leading-[130%] mr-auto`}>
+        <h5 className={String.raw`text-white text-[clamp(24px,3.6vw,38px)] font-bold leading-[130%] mr-auto`}>
           {cardAttr.title}
         </h5>
         <GlobalBtn

@@ -1,5 +1,4 @@
 import React, { useContext } from 'react'
-// import 'styles/ItemGridBox.scss'
 import { WindowSizeContext } from 'contexts/WindowSizeContext';
 
 export default function ItemGridBox({ children, classes }: any) {

@@ -1,25 +1,9 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import ItemGridBox from 'components/ItemGridBox'
 import ItemCard from 'components/ItemCard'
 import GlobalBtn from 'components/GlobalBtn';
-import StrapImg from 'assets/strap-img.png'
-import 'styles/IntroductionPage.scss'
-import { WindowSizeContext } from 'contexts/WindowSizeContext';
 
 export default function IntroductionPage() {
-  const windowSize = useContext(WindowSizeContext)
-
-  const getGridTemplateColumns = () => {
-    if (windowSize === 's') {
-      return '100%'
-    }
-    else if (windowSize === 'm') {
-      return '1fr 1fr'
-    }
-    else {
-      return '40% 60%'
-    }
-  }
 
   return (
     <article className={String.raw`w-full max-w-[1200px] flex flex-col justify-center items-center text-white mt-[clamp(64px,15vw,194px)] px-4 box-border`}>
