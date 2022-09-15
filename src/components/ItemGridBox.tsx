@@ -1,15 +1,13 @@
 import React, { useContext } from 'react'
-import 'styles/ItemGridBox.scss'
 import { WindowSizeContext } from 'contexts/WindowSizeContext';
 
-export default function ItemGridBox({ children, styles }: any) {
+export default function ItemGridBox({ children, classes }: any) {
   const windowSize = useContext(WindowSizeContext)
 
   function boxLayout() {
     if (windowSize === 's') {
       return (
-        <div className='item-grid-box'
-          style={styles}
+        <div className={'item-grid-box ' + classes}
         >
           {children}
         </div>
@@ -20,13 +18,12 @@ export default function ItemGridBox({ children, styles }: any) {
       const rightItems = children.filter((ele: any, idx: number) => idx % 2 === 1)
 
       return (
-        <div className='item-grid-box'
-          style={styles}
+        <div className={'item-grid-box ' + classes}
         >
-          <div className='grid-col left'>
+          <div className='grid gap-[24px]'>
             {leftItems}
           </div>
-          <div className='grid-col right'>
+          <div className='grid gap-[24px]'>
             {rightItems}
           </div>
         </div>

@@ -8,7 +8,6 @@ import useWindowSize from 'hooks/useWindowSize';
 import FooterPage from 'pages/FooterPage';
 import ReactGA from 'react-ga'
 import { WindowSizeContext } from 'contexts/WindowSizeContext';
-import './App.scss';
 
 function App() {
   const windowSize = useWindowSize()
@@ -19,9 +18,9 @@ function App() {
     <WindowSizeContext.Provider
       value={windowSize}
     >  
-      <div className="App">
+      <div className={String.raw`w-screen min-w-[360px] flex flex-col justify-start items-center`}>
         <HeaderPage />
-        <section className='body-container'>
+        <section className={String.raw`w-full bg-black flex flex-col justify-start items-center`}>
           <IntroductionPage />
           <ProjectPage />
           <TeamPage />

@@ -1,44 +1,27 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import ItemGridBox from 'components/ItemGridBox'
 import ProjectCard from 'components/ProjectCard'
 import Avatar from 'assets/Avatar.png'
 import Communication from 'assets/Communication.png'
 import Camera from 'assets/Camera.png'
-import 'styles/ProjectPage.scss'
-import { WindowSizeContext } from 'contexts/WindowSizeContext'
 
 export default function ProjectPage() {
-  const windowSize = useContext(WindowSizeContext)
-
   const disableButtonAttrs = {
     'text': 'Coming soon',
-    'classes': 'light',
-    'styles': {
-      'fontSize': 'clamp(14px, 1.8vw, 16px)',
-      'padding': '6px 18px'
-    },
+    'classes': 'text-[clamp(14px,1.8vw,16px)] py-[6px] px-[18px] font-light',
     'disabled': true
   }
 
-  const getGridTemplateColumns = () => {
-    if (windowSize === 's') {
-      return '100%'
-    }
-    else {
-      return '1fr 1fr'
-    }
-  }
-
   return (
-    <article className='project-container'>
-      <div className='project-desc'>
-        <h3 className={'desc-title extrabold italic'}>
+    <article className={String.raw`w-full max-w-[1200px] flex flex-col items-center pt-[clamp(120px,16vw,250px)] px-4 box-border`}>
+      <div className={String.raw`w-full flex flex-col items-start`}>
+        <h3 className='title'>
           Project
         </h3>
-        <h5 className={'desc-sub-title bold'}>
+        <h5 className='sub-title'>
           We want to help you transverse between virtual space and the real world.
         </h5>
-        <p className='desc-text'>
+        <p className='desc'>
           In reality, it is not easy to express my true identity due to various
           restrictions such as social customs, ego, and social status. Through
           Beergang, you can allow yourself to really be who you are in the Metaverse.
@@ -50,10 +33,7 @@ export default function ProjectPage() {
         </p>
       </div>
       <ItemGridBox
-        styles={{
-          'marginTop': 'clamp(36px, 9vw, 81px)',
-          'gridTemplateColumns': getGridTemplateColumns()
-        }}
+        classes={'mt-[clamp(36px,9vw,81px)] tablet:items-stretch'}
       >
         <ProjectCard
           cardAttr={{
@@ -68,9 +48,7 @@ export default function ProjectPage() {
             'image': Communication,
             'title': 'Communication',
             'text': 'An avatar based communication platform on metaverse for all games and services.',
-            'styles': {
-              'margin': 'auto 0'
-            }
+            'classes': 'my-auto'
           }}
           buttonAttr={disableButtonAttrs}
         />
