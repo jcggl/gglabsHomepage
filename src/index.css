@@ -1,17 +1,24 @@
 @tailwind base;
 @tailwind components;
+
+@layer components {
+  .item-grid-box {
+    @apply w-full grid grid-cols-1 gap-[clamp(20px,2.6vw,24px)] items-start tablet:grid-cols-2 desktop:grid-cols-[45fr,55fr];
+  }
+}
+
 @tailwind utilities;
 
 /* reset css */
-/* body {
+body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-} */
+}
 
 /* global font-family*/
-/* html * {
+html * {
   font-family: 'Poppins' !important;
-} */
+}
 
 

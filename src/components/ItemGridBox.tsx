@@ -1,44 +1,36 @@
 import React, { useContext } from 'react'
-import 'styles/ItemGridBox.scss'
+// import 'styles/ItemGridBox.scss'
 import { WindowSizeContext } from 'contexts/WindowSizeContext';
 
-export default function ItemGridBox({ children }: any) {
+export default function ItemGridBox({ children, classes }: any) {
   const windowSize = useContext(WindowSizeContext)
 
-  // function boxLayout() {
-  //   if (windowSize === 's') {
-  //     return (
-  //       <div className={String.raw`w-full grid gap-[clamp(20px,2.6vw,24px)] grid-flow-row`}
-  //       >
-  //         {children}
-  //       </div>
-  //     )
-  //   }
-  //   else {
-  //     const leftItems = children.filter((ele: any, idx: number) => idx % 2 === 0)
-  //     const rightItems = children.filter((ele: any, idx: number) => idx % 2 === 1)
+  function boxLayout() {
+    if (windowSize === 's') {
+      return (
+        <div className={'item-grid-box ' + classes}
+        >
+          {children}
+        </div>
+      )
+    }
+    else {
+      const leftItems = children.filter((ele: any, idx: number) => idx % 2 === 0)
+      const rightItems = children.filter((ele: any, idx: number) => idx % 2 === 1)
 
-  //     return (
-  //       <div className='item-grid-box'
-  //         style={styles}
-  //       >
-  //         <div className='grid-col left'>
-  //           {leftItems}
-  //         </div>
-  //         <div className='grid-col right'>
-  //           {rightItems}
-  //         </div>
-  //       </div>
-  //     )
-  //   }
-  // }
+      return (
+        <div className={'item-grid-box ' + classes}
+        >
+          <div className='grid gap-[24px]'>
+            {leftItems}
+          </div>
+          <div className='grid gap-[24px]'>
+            {rightItems}
+          </div>
+        </div>
+      )
+    }
+  }
 
-  // return boxLayout()
-  return (
-    <div className={String.raw`w-full grid grid-cols-2 grid-flow-row gap-[clamp(20px,2.6vw,24px)] mt-[clamp(76px,11vw,145px)]
-      tablet:grid-rows-6`}
-    >
-      {children}
-    </div>
-  )
+  return boxLayout()
 }

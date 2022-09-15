@@ -33,28 +33,16 @@ export default function IntroductionPage() {
           In our own GoodGang manner!
         </p>
       </div>
-      <ItemGridBox>
+      <ItemGridBox classes={'mt-[clamp(76px,11vw,145px)]'}>
         <ItemCard
-          classes={'light italic'}
-          styles={{
-            'color': '#ffffff',
-            'fontSize': 'clamp(24px, 3.65vw, 50px)',
-            'lineHeight': '150%',
-            'padding': 0
-          }}
+          classes={'text-white text-[clamp(24px,3.65vw,50px)] leading-[150%] font-light italic p-0'}
         >
           <p>
             Are you ready to be a part of our GoodGang Community?
           </p>
         </ItemCard>
         <ItemCard
-          classes={'light'}
-          styles={{
-            'color': '#ffffff',
-            'backgroundColor': '#6038FF',
-            'fontSize': 'clamp(18px, 2.86vw, 30px)',
-            'lineHeight': 'clamp(26px, 155%, 51px)'
-          }}
+          classes={'text-white text-[clamp(18px,2.86vw,30px)] leading-[clamp(26px,155%,51px)] bg-[#6038FF] font-light tablet:mt-[clamp(0px,calc(100%-500px),177px)]'}
         >
           <GlobalBtn
             text={'Mission'}
@@ -69,23 +57,9 @@ export default function IntroductionPage() {
           </p>
         </ItemCard>
         <ItemCard
-          classes={'extrabold'}
-          styles={{
-            'color': '#000000',
-            'backgroundColor': '#84FB72',
-            'fontSize': 'clamp(22px, 3vw, 34px)',
-            'lineHeight': 'clamp(33px, 165%, 50px)',
-            'paddingTop': 'clamp(63px, 10vw, 130px)',
-            'marginTop': 'calc(clamp(60px, 9vw, 100px) / 2)'
-          }}
+          classes={'text-black text-[clamp(22px,3vw,34px)] leading-[clamp(33px,165%,50px)] font-extrabold bg-[#84FB72] pt-[clamp(63px,10vw,130px)] mt-[clamp(30px,4.5vw,50px)]'}
         >
-          <p className='fire-imogy'
-            style={{
-              'position': 'absolute',
-              'top': '-10%',
-              'left': '5%',
-              'fontSize': 'clamp(60px, 9vw, 100px)'
-            }}
+          <p className={String.raw`absolute top-[-10%] left-[5%] text-[clamp(60px,9vw,100px)]`}
           >
             🔥
           </p>
@@ -94,11 +68,7 @@ export default function IntroductionPage() {
           </p>
         </ItemCard>
         <ItemCard
-          styles={{
-            'height': 'clamp(155px, 20vw,334px)',
-            'backgroundImage': `url(${StrapImg})`,
-            'backgroundSize': 'cover'
-          }}
+          classes={String.raw`h-[clamp(155px,20vw,334px)] bg-[url("assets/strap-img.png")] bg-cover`}
         />
       </ItemGridBox>
     </article>
