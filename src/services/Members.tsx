@@ -31,7 +31,7 @@ const Members: object[] = [
   {
     'image': JH,
     'name': 'Junhwan Jang',
-    'role': 'AI / ML Engineer',
+    'role': 'AI Engineer',
     'comment': 'Searches for the most unique outfits that one can find',
     'contect': 'https://www.linkedin.com/in/junhwan-jang/'
   },
