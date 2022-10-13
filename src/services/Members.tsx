@@ -4,6 +4,7 @@ import SY from 'assets/members/SY.png'
 import JH from 'assets/members/JH.png'
 import HW from 'assets/members/HW.png'
 import JHK from 'assets/members/JHK.png'
+import BL from 'assets/members/BL.png'
 
 const Members: object[] = [
   {
@@ -47,6 +48,13 @@ const Members: object[] = [
     'role': '3D Generalist',
     'comment': 'The world is 3D + time',
     'contect': ''
+  },
+  {
+    'image': BL,
+    'name': 'Brian Lee',
+    'role': 'AI Engineer',
+    'comment': 'Retired guitarist looking for a day job',
+    'contect': 'https://www.linkedin.com/in/brianlee00/'
   },
 ]
 
