@@ -21,7 +21,7 @@ export default function TeamPage() {
         </p>
       </div>
       <ItemFlexBox
-        classes={'mt-[clamp(32px,8.07vw,88px)]'}
+        classes={'mt-[clamp(32px,8.07vw,88px)] !justify-start w-[352px] md:w-[calc(clamp(640px,83.2vw,756px)+64px)] xl:w-[1230px]'}
       >
         {Members.map((ele: any) => (
           <MemberCard {...ele} key={ele.name} />
